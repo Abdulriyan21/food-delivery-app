@@ -1,17 +1,42 @@
 # 🍔 Swiggy-like Food Delivery App (MERN + Python)
 
-📌 Project Description
+A Swiggy-like food delivery app built with MERN stack and Python microservices, featuring restaurant browsing, order placement, and delivery tracking.
+Features
 
-* This project is a comprehensive, full-stack food delivery platform modeled after the popular Swiggy service, combining the MERN stack for high-speed web interactions with Python-based microservices for specialized tasks. The frontend is built with React.js and Redux, ensuring smooth state management, instant updates, and a responsive interface optimized for both desktop and mobile users.
+Restaurant browsing and menu management
+Order placement and tracking (Pending, Cooking, Ready, Delivered)
+User authentication with JWT
+Scalable microservices architecture
+Payment integration (Stripe/PayPal, planned)
 
-* At its core, a Node.js/Express API Gateway intelligently routes client requests to the appropriate backend services, maintaining modularity and scalability. The application employs Python microservices (developed using Flask/Django) for handling specific business operations such as restaurant ranking, order processing, and potential AI-driven personalization.
+Technologies Used
 
-* Data persistence is handled through a hybrid database model — MongoDB stores dynamic restaurant and menu data for rapid querying, while PostgreSQL is used for critical transactional data like orders, payments, and delivery records. JWT authentication ensures secure and tamper-proof login and registration processes, protecting sensitive user information.
+Frontend: React.js, Redux, Material-UI
+Backend: Python (Flask, Django), Node.js (Express)
+Databases: MongoDB (restaurants), PostgreSQL (orders)
+Other: JWT, AWS (EC2, RDS, S3), GitHub Actions
 
-* The app offers real-time order tracking with WebSockets, allowing customers to monitor their orders from preparation to delivery. For payments, it seamlessly integrates with Razorpay and Stripe, enabling secure and smooth transactions for both domestic and international customers.
+Project Structure
+food-delivery-app/
+├── client/               # React frontend
+├── api-gateway/          # Node.js/Express API gateway
+├── restaurant-service/   # Python (Flask) restaurant management
+├── order-service/        # Python (Django) order processing
+├── user-service/         # Node.js user management
+├── delivery-service/     # Python delivery tracking
+├── .github/workflows/    # CI/CD configuration
+├── README.md             # Project documentation
+└── LICENSE               # License file
 
-* Deployment is powered by AWS, using EC2 instances for computation, RDS for relational storage, S3 for asset hosting, and CloudFront for global content delivery. Nginx serves as a reverse proxy for load balancing and SSL termination, while PM2 and Gunicorn ensure process stability and high availability in production environments.
+API Documentation
 
-* A CI/CD pipeline built with GitHub Actions automates testing, building, and deployment, ensuring continuous delivery of updates without service downtime. The architecture follows a microservices approach, allowing independent scaling, easier debugging, and faster feature development.
+Base URL: http://localhost:3000
+Endpoints:
+GET /restaurants/restaurants: List restaurants
+GET /restaurants/restaurants/<restaurant_id>: Restaurant details
+POST /orders/orders: Create order
+GET /orders/orders/<order_id>: Order details
+POST /users/register: User registration
+POST /users/login: User login
 
-* Finally, the platform is future-ready, with placeholders and modular integration points for AI-based restaurant recommendations, predictive analytics, and personalized marketing features, making it a robust foundation for an intelligent food delivery ecosystem.
+
