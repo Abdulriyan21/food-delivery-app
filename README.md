@@ -1,5 +1,4 @@
-# 🍔 Swiggy-like Food Delivery App (MERN + Python)
-
+🍔 Swiggy-like Food Delivery App
 A Swiggy-like food delivery app built with MERN stack and Python microservices, featuring restaurant browsing, order placement, and delivery tracking.
 Features
 
