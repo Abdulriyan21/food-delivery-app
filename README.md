@@ -16,15 +16,17 @@ A **Swiggy-like food delivery app** built with **MERN stack** and **Python micro
 - **Other**: JWT, AWS (EC2, RDS, S3), GitHub Actions  
  
 ## 📂 Project Structure
+ 
 food-delivery-app/
-├── client/ # React frontend
-├── api-gateway/ # Node.js/Express API gateway
-├── restaurant-service/ # Python (Flask) restaurant management
-├── order-service/ # Python (Django) order processing
-├── user-service/ # Node.js user management
-├── delivery-service/ # Python delivery tracking
-├── .github/workflows/ # CI/CD configuration
-└── README.md # Project documentation
+├── client/                 # React frontend
+├── api-gateway/            # Node.js/Express API gateway
+├── restaurant-service/     # Python (Flask) restaurant management
+├── order-service/          # Python (Django) order processing
+├── user-service/           # Node.js user management
+├── delivery-service/       # Python delivery tracking
+├── .github/workflows/      # CI/CD configuration
+├── README.md               # Project documentation
+└── LICENSE                 # License file
  
  
 ## 📜 API Documentation
