@@ -38,6 +38,7 @@ Tech Stack
 * Version Control: GitHub
 
 * CI/CD: GitHub Actions
+
 🚀 Features
 ✅ Browse Restaurants & Menus
 ✅ Add to Cart & Checkout
@@ -46,10 +47,12 @@ Tech Stack
 ✅ Payment Gateway Integration (Stripe/PayPal)
 ✅ Microservices Scalability
 ✅ Hybrid Database Approach
+
 🔧 Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/yourusername/food-delivery-app.git
 cd food-delivery-app
+
 2️⃣ Backend Setup
   Restaurant Service (Flask)
   cd restaurant-service
@@ -57,6 +60,7 @@ cd food-delivery-app
   source venv/bin/activate  # On Windows: venv\Scripts\activate
   pip install -r requirements.txt
   python app.py
+
 * Order Service (Django)
   cd order-service
   python -m venv venv
@@ -64,36 +68,39 @@ cd food-delivery-app
   pip install -r requirements.txt
   python manage.py migrate
   python manage.py runserver 0.0.0.0:8000
+
 *API Gateway (Node.js)
   cd api-gateway
   npm install
   node index.js
+
 3️⃣ Frontend Setup
   cd client
   npm install
   npm start
+
 🗄️ Database Setup
 MongoDB (Restaurants)
   sudo service mongodb start
   mongo
+
 * PostgreSQL (Orders)
   CREATE DATABASE food_delivery;
   CREATE USER delivery_user WITH PASSWORD 'password';
   GRANT ALL PRIVILEGES ON DATABASE food_delivery TO delivery_user;
+
 ☁️ Deployment on AWS
   1.EC2 for backend services (Flask/Django/Node.js)
   2.RDS for PostgreSQL
   3.S3 for static React frontend hosting
   4.Nginx as reverse proxy
   5.GitHub Actions for CI/CD
-📜 License
-This project is licensed under the MIT License.
 
 
----
+
 
 ### How to Add This to Your Repo
-```bash
+--------------------------------
 cd food-delivery-app
 nano README.md   # Paste the above content
 git add README.md
